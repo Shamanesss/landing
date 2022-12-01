@@ -6,18 +6,19 @@
 body{
     font-family: 'Kaushan Script', cursive;
     color: aliceblue;
+    
 }
-#bar-nav{
+#navigation{
     display: flex;
     justify-content: space-evenly;
     background-color: rgb(4, 4, 74);
+   
 }
-#bar-nav p{
+#navigation p{
     padding: 10px;
 }
 a{
-  
-  color: aliceblue;
+   color: aliceblue;
   text-decoration: none;
   
 }
@@ -26,41 +27,63 @@ li{
     display: inline-block;
     padding: 10px;
 }
-#start, #about{
+#start{
     background-color: rgb(100, 182, 159);
     text-align: center;
     padding: 1.875rem;
+    
 }
 #avatar{
     width: 10.938rem;
     height: 10.938rem;
    padding: 1.875rem;
 }
-#porfolio{
-  
+#porfolio, #contact{
     color: black;
-    text-align: center;
-    padding: 1.875rem;
-   
+   text-align: center;
+   margin: 1.875rem;
 }
-.image{
+.porfolio-contenedor{
+  display: grid;
+  grid-template-columns: 10rem 10rem 10rem;
+  justify-content: center;
+  margin: 1.875rem;
+}
+.porfolio-contenedor > div img{
     width: 9.375rem;
     height: 6.25rem;
-    padding: 0.625rem;
-  
 }
-#porfolio-head{
+#about{
+    background-color: rgb(100, 182, 159);
     text-align: center;
-    justify-content: flex-start;
+    padding: 1.875rem;
 }
-#contenedor{
-  
-    height: 15.625rem;
-    width: 34.375rem;
-    margin: auto;
+.about-texto{
+    display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  margin: 1.875rem;
 }
-.about-contenedor{
-    width: 18.75rem;
-    height: 18.75rem;
+.about-texto > div p{
+    width: 15.4rem;
+   
+    text-align: left;
+    padding: 0.625rem;
 }
-
+.btn::before {
+        content: url('btn1.png');
+}
+.btn{
+   color: #fff;
+    border: 2px solid #fff;
+    text-align: center;
+    background-color: rgb(100, 182, 159);
+    padding: 0.625rem;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color:rgb(62, 129, 110); 
+}
+label{
+    text-align: left;
+}
